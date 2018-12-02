@@ -61,7 +61,7 @@ float diagnostics(float rocketInfo) {  //this phase will operate before we launc
   rocketInfo = dataAnalytics(gpsData, bmpData);  //returns array containing p, p', v, v', a, a', along with any GPS data we want
   storeData(rocketInfo);  //This funct
   
-  led.statusCheck(*Check to see if we can pass already taken data*);
+  led.statusCheck(bmpcheck, fix, sdtest);
   
   return rocketInfo;
 }
